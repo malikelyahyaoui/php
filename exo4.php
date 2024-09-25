@@ -12,17 +12,13 @@ Ecrire un algorithme permettant de savoir si une phrase est palindrome</p>
 
 
 function estPalindrome($phrase) {
-    // Convertir en minuscules
     $phrase = strtolower($phrase);
     
-    // Retirer tous les espaces et la ponctuation (en conservant seulement les lettres et chiffres)
     $phrase = preg_replace('/[^a-z0-9]/', '', $phrase);
     
-    // Vérifier si la phrase est égale à son inverse
     return $phrase === strrev($phrase);
 }
 
-// Exemple d'utilisation avec la phrase donnée
 $phrase = "taco cat";
 
 if (estPalindrome($phrase)) {
