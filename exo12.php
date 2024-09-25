@@ -6,9 +6,7 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
 <h2>RESULTAT</h2>
 
 <?php
-// Fonction pour dire bonjour dans la langue respective
 function direBonjour($prenom, $langue) {
-    // Utilisation d'un switch pour saluer dans la langue correspondante
     switch ($langue) {
         case 'français':
             echo "Salut $prenom !<br>";
@@ -25,7 +23,6 @@ function direBonjour($prenom, $langue) {
     }
 }
 
-// Tableau associatif des prénoms et langues associées
 $personnes = [
     'Marie' => 'français',
     'John' => 'anglais',
@@ -34,7 +31,6 @@ $personnes = [
     'Jean' => 'français'
 ];
 
-// Parcours du tableau pour saluer chaque personne dans sa langue
 foreach ($personnes as $prenom => $langue) {
     direBonjour($prenom, $langue);
 }
