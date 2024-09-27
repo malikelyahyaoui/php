@@ -28,6 +28,6 @@ $sexe2 = 'homme';
 $imposable1 = estImposable($age1, $sexe1);
 $imposable2 = estImposable($age2, $sexe2);
 
-echo "La personne 1 est " . ($imposable1 ? "imposable" : "non imposable") . ".\n";
-echo "La personne 2 est " . ($imposable2 ? "imposable" : "non imposable") . ".\n";
+echo "La personne 1 est " . ($imposable1 ? "imposable" : "non imposable") . ".<br>";
+echo "La personne 2 est " . ($imposable2 ? "imposable" : "non imposable") . ".<br>";
 ?>
