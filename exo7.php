@@ -9,15 +9,15 @@
 function DeterminerCategorie($age){
     if ($age >= 12){
     return "Cadet";
-} elseif ($age >=10 && $age <= 11) {
+} elseif ($age >= 11) {
     return "Minime";
-} elseif ($age >=8 && $age <= 9){
+} elseif ($age>= 9){
     return "Pupille";
 } else {
     return "Poussin";
 }}
 
 
-$age = 13;
+$age = 10;
 $categorie = DeterminerCategorie($age);
 echo "L'enfant de $age ans appartient à la catégorie : $categorie";
